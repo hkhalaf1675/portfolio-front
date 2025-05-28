@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <!-- 
+        The main will consist of two vertical sections:
+            1- Vertical Navigation Bar to navigate through the portfolio sections.
+            2- Main Content Area to display the portfolio content:
+                - Introduction Section
+                - Experience Section
+                - Education Section
+                - Skills Section
+                - Certifications Section
+                - Projects Section
+                - Contact Section
+    -->
+  <div class="container">
+    <section id="sidebar" class="sidebar">
+      <button id="sidebar-toggle"><i class="fas fa-bars"></i></button>
+      <ul>
+        <li><a href="#introduction"><i class="fas fa-user"></i><span class="link-text">Introduction</span></a></li>
+        <li><a href="#experiences"><i class="fas fa-briefcase"></i><span class="link-text">Experiences</span></a></li>
+        <li><a href="#education"><i class="fas fa-graduation-cap"></i><span class="link-text">Education</span></a></li>
+        <li><a href="#skills"><i class="fas fa-code"></i><span class="link-text">Skills</span></a></li>
+        <li><a href="#certifications"><i class="fas fa-file-lines"></i><span class="link-text">Certifications</span></a></li>
+        <li><a href="#projects"><i class="fas fa-folder-open"></i><span class="link-text">Projects</span></a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i><span class="link-text">Contact</span></a></li>
+      </ul>
+    </section>
+    
+    <section class="content">
+      <header>
+        <h1>Hassan Tawfik Portfolio</h1>
+        <button id="theme-toggle">🌙</button>
+      </header>
+
+      <section id="introduction" class="introduction underLine">
+        
+      </section>
+  
+      <section id="experiences" class="experiences underLine">
+        <h2 class="m-h-1 m-v-1">Experiences</h2>
+        <div id="experiencesList" class="flex-list"></div>
+      </section>
+
+      <section id="education" class="education underLine m-h-1">
+        <h2 class="m-v-1">Education</h2>
+      </section>
+
+      <section id="skills" class="skills underLine m-h-1">
+        <h2 class="m-v-1">Technical Skills</h2>
+      </section>
+
+      <footer>
+        <p>&copy; 2025 Hassan Tawfik</p>
+      </footer>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
